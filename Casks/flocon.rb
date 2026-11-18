@@ -3,9 +3,9 @@
 cask "flocon" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.0.0"
-  sha256 arm:   "cbde07c1a8d609f3e9838b040f5e4c71b42645443b908bad9191220ed9494d69",
-         intel: "b47c3ae4a48f4a0a95796593cd1d69352924283d6ed15213d4d81324618e3e1d"
+  version "2.0.1"
+  sha256 arm:   "d4985ab33a45a900bc4d44bf0ec9dc49e353edada1698cbbf1bf3e3ec9f21ee9",
+         intel: "f971e96f275068500d3fdbbd3f37276af256fced3314129cce12c930457dfa27"
 
   url "https://github.com/openflocon/Flocon/releases/download/#{version}/Flocon-macos-#{arch}.dmg"
   name "Flocon"
@@ -21,9 +21,9 @@ cask "flocon" do
 
   # Flocon Desktop is not signed nor notarized: remove the quarantine flag so
   # Gatekeeper does not block the first launch.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-cr", "#{appdir}/Flocon.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-cr", "{{appdir}}/Flocon.app"],
+        must_succeed: false
   end
 end

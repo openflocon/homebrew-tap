@@ -8,7 +8,7 @@
 class Flocon < Formula
   desc "Desktop companion to inspect and debug Android and Kotlin Multiplatform apps"
   homepage "https://openflocon.github.io/Flocon/"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   depends_on :linux
@@ -16,12 +16,12 @@ class Flocon < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/openflocon/Flocon/releases/download/2.0.0/Flocon-linux-x64.jar"
-      sha256 "ffeaaf5380c4b02c99f1e6bdac76afbb36afdd3f2336c728ac0fb902e1bacc1c"
+      url "https://github.com/openflocon/Flocon/releases/download/2.0.1/Flocon-linux-x64.jar"
+      sha256 "4620ccad2920679edf14e8ab263569c4c9f866caad043948f5e4f6182b72d72f"
     end
     on_arm do
-      url "https://github.com/openflocon/Flocon/releases/download/2.0.0/Flocon-linux-arm64.jar"
-      sha256 "7a6a77793cfb194f9d234a0edbef01510fecc15fa82fe0380b9b63a28424b013"
+      url "https://github.com/openflocon/Flocon/releases/download/2.0.1/Flocon-linux-arm64.jar"
+      sha256 "377e78dc4ecffc97863faae166359a2448011588f5c5488ad4408613d8155b4f"
     end
   end
 
