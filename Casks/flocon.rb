@@ -3,9 +3,9 @@
 cask "flocon" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.0.1"
-  sha256 arm:   "d4985ab33a45a900bc4d44bf0ec9dc49e353edada1698cbbf1bf3e3ec9f21ee9",
-         intel: "f971e96f275068500d3fdbbd3f37276af256fced3314129cce12c930457dfa27"
+  version "2.0.2"
+  sha256 arm:   "61d645d5bf14fdb576e53cd0af2c8348d544fe3342e93d18e9d2116d47ba94f0",
+         intel: "3826a6b2fbf8cc0b64ebec6d74b6d2a06c8fc42ef15f6efbbc7a6f5eb86c6d7f"
 
   url "https://github.com/openflocon/Flocon/releases/download/#{version}/Flocon-macos-#{arch}.dmg"
   name "Flocon"
